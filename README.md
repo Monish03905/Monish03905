@@ -14,7 +14,7 @@ I build practical software systems at the intersection of **Artificial Intellige
 💻 Building AI-powered and full-stack applications
 🤖 Exploring AI Agents, RAG, Computer Vision & intelligent developer tools
 ☁️ Learning scalable cloud architectures and modern DevOps workflows
-🏆 **4-Star CodeChef Competitive Programmer**
+🏆 **5-Star CodeChef Competitive Programmer**
 🚀 Focused on building systems that solve real-world problems
 
 ---

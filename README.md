@@ -390,7 +390,11 @@ Active on **LeetCode · CodeChef · HackerRank · HackerEarth · Codeforces**, w
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Monish03905/Monish03905/output/github-snake-dark.svg" alt="Contribution snake" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Monish03905/Monish03905/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Monish03905/Monish03905/output/github-snake.svg" />
+    <img alt="Contribution snake eating my commits" src="https://raw.githubusercontent.com/Monish03905/Monish03905/output/github-snake-dark.svg" />
+  </picture>
 </p>
 
 ---

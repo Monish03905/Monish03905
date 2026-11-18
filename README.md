@@ -14,10 +14,11 @@
 </p>
 
 <p align="center">
+  <a href="https://monishratan-portfolio.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-2EC4B6?style=for-the-badge&logo=netlify&logoColor=0b132b"/></a>
   <a href="https://www.linkedin.com/in/monish-ratan-259695247/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="mailto:monish03905@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://leetcode.com/u/KL2400080018/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white"/></a>
-  <a href="https://www.codechef.com/"><img src="https://img.shields.io/badge/CodeChef_5%E2%98%85-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/></a>
+  <a href="https://www.codechef.com/"><img src="https://img.shields.io/badge/CodeChef_4%E2%98%85-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/></a>
 </p>
 
 ---
@@ -29,10 +30,26 @@
 <td align="center" width="20%"><h1>8.34</h1><b>CGPA</b><br/><sub>B.Tech AI & DS</sub></td>
 <td align="center" width="20%"><h1>9,754</h1><b>CHUNKS</b><br/><sub>indexed in FAISS</sub></td>
 <td align="center" width="20%"><h1>6-DOF</h1><b>DRONE</b><br/><sub>flown by hand gestures</sub></td>
-<td align="center" width="20%"><h1>7</h1><b>PROJECTS</b><br/><sub>3 live deployed apps</sub></td>
+<td align="center" width="20%"><h1>8</h1><b>PROJECTS</b><br/><sub>3 live deployed apps</sub></td>
 <td align="center" width="20%"><h1>5</h1><b>CERTS</b><br/><sub>cloud & AI</sub></td>
 </tr>
 </table>
+
+---
+
+## 🌐 PORTFOLIO
+
+<p align="center">
+  <a href="https://monishratan-portfolio.netlify.app/">
+    <img src="https://img.shields.io/badge/%E2%96%B6%20ENTER%20THE%20FULL%20PORTFOLIO-monishratan--portfolio.netlify.app-0b132b?style=for-the-badge&labelColor=2ec4b6" />
+  </a>
+</p>
+
+<p align="center"><i>"I build AI systems that see, retrieve, and verify."</i><br/>RAG pipelines · computer vision · full-stack software</p>
+
+| 👁️ **See** | 🔎 **Retrieve** | ✅ **Verify** |
+|---|---|---|
+| Computer vision: gesture-controlled drone with OpenCV and MediaPipe | Multilingual RAG: 9,754 chunks in FAISS, served by FastAPI | Code repair with tests and CI/CD: DeVision's five-stage loop |
 
 ---
 
@@ -49,6 +66,7 @@
 │  ACTIVE     DeVision · OpsGuard · Switchyard LLM Gateway         │
 │  LEARNING   AI agents · RAG · system design · AWS · CI/CD        │
 │  SEEKING    AI/ML · software engineering · full-stack internship │
+│  PORTFOLIO  monishratan-portfolio.netlify.app                    │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
@@ -115,7 +133,7 @@ Route LLM traffic across models and providers, with OpenAI and Anthropic API for
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-[📦 Repository](https://github.com/Monish03905/DeVision) · 🌐 Live demo
+[📦 Repository](https://github.com/Monish03905/DEVISION-A.I.-SOFTWARE-) · 🌐 Live demo
 
 </td>
 <td width="33%" valign="top">
@@ -401,6 +419,7 @@ Cloud & CI/CD    ██████████░░░░░░  AWS, pipeline
 I'm looking for an **AI/ML, software engineering or full-stack internship** where I can keep shipping, and I'm happy to collaborate on AI and software projects.
 
 <p align="center">
+  <a href="https://monishratan-portfolio.netlify.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%90_View_my_Portfolio-0b132b?style=for-the-badge&labelColor=f2b705"/></a>
   <a href="mailto:monish03905@gmail.com"><img src="https://img.shields.io/badge/%F0%9F%93%A7_monish03905%40gmail.com-0b132b?style=for-the-badge&labelColor=2ec4b6"/></a>
   <a href="https://www.linkedin.com/in/monish-ratan-259695247/"><img src="https://img.shields.io/badge/%F0%9F%92%BC_Connect_on_LinkedIn-0b132b?style=for-the-badge&labelColor=0A66C2"/></a>
 </p>

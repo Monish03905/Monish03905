@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1100&color=2EC4B6&center=true&vCenter=true&width=820&lines=%E2%96%B6+STATUS%3A+online+and+shipping;%E2%96%B6+FOCUS%3A+AI+agents+%C2%B7+RAG+%C2%B7+LLM+routing+%C2%B7+cloud;%E2%96%B6+BUILDING%3A+DeVision+%C2%B7+OpsGuard+%C2%B7+Switchyard;%E2%96%B6+RANK%3A+4-Star+CodeChef+programmer;%E2%96%B6+OPEN+TO%3A+AI%2FML+and+software+engineering+internships" alt="status ticker" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1100&color=2EC4B6&center=true&vCenter=true&width=820&lines=%E2%96%B6+STATUS%3A+online+and+shipping;%E2%96%B6+FOCUS%3A+AI+agents+%C2%B7+RAG+%C2%B7+LLM+routing+%C2%B7+cloud;%E2%96%B6+BUILDING%3A+DeVision+%C2%B7+OpsGuard+%C2%B7+Switchyard;%E2%96%B6+RANK%3A+5-Star+CodeChef+programmer;%E2%96%B6+OPEN+TO%3A+AI%2FML+and+software+engineering+internships" alt="status ticker" />
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 <td align="center" width="20%"><h1>8.34</h1><b>CGPA</b><br/><sub>B.Tech AI & DS</sub></td>
 <td align="center" width="20%"><h1>9,754</h1><b>CHUNKS</b><br/><sub>indexed in FAISS</sub></td>
 <td align="center" width="20%"><h1>6-DOF</h1><b>DRONE</b><br/><sub>flown by hand gestures</sub></td>
-<td align="center" width="20%"><h1>8</h1><b>PROJECTS</b><br/><sub>3 live deployed apps</sub></td>
+<td align="center" width="20%"><h1>8</h1><b>FLAGSHIP BUILDS</b><br/><sub>3 live, 26 public repos</sub></td>
 <td align="center" width="20%"><h1>5</h1><b>CERTS</b><br/><sub>cloud & AI</sub></td>
 </tr>
 </table>
@@ -49,7 +49,7 @@
 
 | 👁️ **See** | 🔎 **Retrieve** | ✅ **Verify** |
 |---|---|---|
-| Computer vision: gesture-controlled drone with OpenCV and MediaPipe | Multilingual RAG: 9,754 chunks in FAISS, served by FastAPI | Code repair with tests and CI/CD: DeVision's five-stage loop |
+| Computer vision: gesture-controlled drone with OpenCV and MediaPipe | Multilingual RAG: 9,754 chunks in FAISS, served by FastAPI | Code repair with real test runs: DeVision's five-stage loop |
 
 ---
 
@@ -113,11 +113,11 @@ flowchart TB
 ### 🚉 Switchyard
 **LLM Gateway & Router**
 
-Route LLM traffic across models and providers, with OpenAI and Anthropic API formats translated on the fly.
+Routes each request to a cheap or a strong model, explains the decision, and writes a tamper-evident receipt.
 
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![LLM](https://img.shields.io/badge/LLM_Routing-2ec4b6?style=flat-square)
-![Status](https://img.shields.io/badge/status-experimental-f2b705?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Status](https://img.shields.io/badge/status-92_tests_passing-2ec4b6?style=flat-square)
 
 [📦 Repository](https://github.com/Monish03905/switchyard-llm-gateway)
 
@@ -131,9 +131,9 @@ Route LLM traffic across models and providers, with OpenAI and Anthropic API for
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![TanStack](https://img.shields.io/badge/TanStack_Start-FF4154?style=flat-square&logo=reactquery&logoColor=white)
 
-[📦 Repository](https://github.com/Monish03905/DEVISION-A.I.-SOFTWARE-) · 🌐 Live demo
+[📦 Repository](https://github.com/Monish03905/DEVISION-A.I.-SOFTWARE-) · [🌐 Live demo](https://jocular-douhua-96704b.netlify.app/)
 
 </td>
 <td width="33%" valign="top">
@@ -147,7 +147,7 @@ SLA monitoring · incidents · playbooks · quality gates
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 
-[📦 Repository](https://github.com/Monish03905/OpsGuard) · 🌐 Live demo
+[📦 Repository](https://github.com/Monish03905/OpsGuard)
 
 </td>
 </tr>
@@ -157,38 +157,43 @@ SLA monitoring · incidents · playbooks · quality gates
 
 ## 🚉 DEEP DIVE: SWITCHYARD LLM GATEWAY
 
-An LLM agent speaks one API. The model you want to use speaks another. Switchyard sits in the middle, decides **which backend should answer**, and translates in both directions, so the agent never notices.
+Most routing demos show a cheaper bill. Switchyard also shows what the cheap route got wrong and whether the ledger can be edited afterwards. Every request gets a weighted score, a route (`thrift` or `prime`), and a signed receipt that explains the decision.
 
 ```mermaid
 sequenceDiagram
     autonumber
-    participant C as 🧑‍💻 Agent (Claude Code, Codex)
+    participant C as 🧑‍💻 Client
     participant S as 🚉 Switchyard
-    participant R as 🧭 Routing algorithm
-    participant B as 🖥️ Backend (vLLM, NIM, Ollama, OpenRouter)
-    C->>S: Request in its native API format
-    S->>R: Which target should serve this?
-    R-->>S: Chosen backend
-    S->>B: Request in the backend's own format
-    B-->>S: Model response
-    S-->>C: Response translated back to the client's format
-    Note over S: Prometheus metrics track requests, errors, latency and tokens
+    participant B as 🖥️ Thrift / Prime backend
+    C->>S: Prompt + task context
+    S->>S: Weighted scorer → route + confidence
+    S->>B: Dispatch on the chosen rail
+    B-->>S: Answer + token usage
+    S->>S: Retries, breaker, cache, budget guard
+    S-->>C: Answer + HMAC-SHA256 receipt
+    Note over S: /api/ledger/verify recomputes the chain
 ```
 
-| 🧭 Routing strategy | What it does |
-|---|---|
-| 🎲 **Random split** | Spreads traffic across models, handy for A/B benchmarking |
-| 🧠 **LLM classifier** | Reads the request and decides whether it needs a weak or a strong model |
-| 🪜 **Escalation** | Starts on the cheap tier, then a judge decides whether to retry on the strong one |
-| 🎛️ **Stage / custom** | Signal-driven stage routing, or your own algorithm |
+### What the router does
 
-| 🔌 Protocols translated | 🏃 Run it as |
+| Mechanism | What it buys |
 |---|---|
-| OpenAI Chat Completions | A standalone proxy server |
-| OpenAI Responses | A launcher for coding agents |
-| Anthropic Messages | An embedded Rust library |
+| 🧭 **Weighted scorer** | Picks `thrift` or `prime` and reports the contributions behind the choice |
+| 🔁 **Jittered retries + fallback** | One slow or failing provider does not sink the request |
+| 🚧 **Breaker, cache, budget guard** | Stops runaway retries, repeated calls and spend |
+| 🧾 **Receipt chain** | HMAC-SHA256 per row; the verifier names the first broken link |
 
-**Why it matters:** flexible model selection, benchmarking and cost/performance tuning without rewriting a single client.
+### Measured on one 36-task exam
+
+| Policy | Pass rate | Cost, 36 tasks |
+|---|---:|---:|
+| Thrift only | 41.7% | $0.000837 |
+| **Yardmaster (router)** | **94.4%** | **$0.007094** |
+| Prime only | 100% | $0.009487 |
+
+The router keeps **94.4% of prime's pass rate for 74.8% of its spend**. That trade is re-measured in CI — routing regressions fail the build.
+
+**Run it:** `docker compose up --build` → `http://localhost:8000`. No API key needed: a deterministic simulator drives the cockpit, the tests and the exam offline.
 
 [📦 View the repository](https://github.com/Monish03905/switchyard-llm-gateway)
 
@@ -207,19 +212,20 @@ flowchart LR
     E --> F[("🗃️ FAISS<br/>9,754 chunks")]
     Q["❓ Question"] --> R["🔎 Vector retrieval"]
     F --> R
-    R --> L["🤖 Local LLM"]
+    R --> L["🤖 Local LLM<br/>(optional)"]
     L --> A["💬 Grounded answer"]
     A -.-> API["⚡ FastAPI endpoint"]
 ```
 
 - 🌍 Multilingual embeddings with `paraphrase-multilingual-MiniLM-L12-v2`
 - 🗃️ 9,754 document chunks indexed in FAISS
-- ⚡ FastAPI service connecting retrieval to a local generation model
+- ⚡ FastAPI service that returns extractive, source-backed answers, with optional drafting from a local Ollama model
+- 📎 Drop your own PDFs, Word files, Markdown, CSV or logs into a chat and query them alongside the corpus
 
 </details>
 
 <details>
-<summary><b>🧠 DeVision</b> · Autonomous Code Repair & Verification Engine · <code>TypeScript</code> <code>Vite</code> <code>CI/CD</code></summary>
+<summary><b>🧠 DeVision</b> · Autonomous Code Repair & Verification Engine · <code>TypeScript</code> <code>React</code> <code>TanStack</code></summary>
 <br>
 
 ```mermaid
@@ -233,9 +239,10 @@ stateDiagram-v2
     Verify --> Understand: checks failed, try again
 ```
 
-- 🔄 Side-by-side original vs fixed code comparison
-- ⚙️ CI/CD execution with live build logs and verification status
-- 📊 Live CPU, memory, execution-time and compute-cost metrics
+- 🔄 Side-by-side original vs fixed code, with a real revision diff at every stage
+- 🧪 Test cases execute in the browser against each revision — pass/fail is real; the CI pipeline and resource numbers are simulated
+- 📊 Run history with per-stage telemetry, scheduling and a cost-per-cycle dashboard
+- 🔒 Zero backend, zero API keys, no code leaves the machine
 
 </details>
 
@@ -267,10 +274,10 @@ No keyboard, no joystick. Just a webcam and your hands.
 </details>
 
 <details>
-<summary><b>🏥 Student Health & Wellness Tracker</b> · <code>React</code> <code>TypeScript</code> <code>Spring Boot</code> <code>Hibernate</code></summary>
+<summary><b>🏥 Student Health & Wellness Tracker</b> · <code>React</code> <code>TypeScript</code> <code>Vite</code></summary>
 <br>
 
-A publicly deployed full-stack platform: **React → Spring Boot REST → Hibernate → MySQL / PostgreSQL**.
+A wellness web app live at **[wellnes-tracker.netlify.app](https://wellnes-tracker.netlify.app/)** — sleep, hydration, nutrition, campus events, anonymous peer support, care-location discovery and emergency SOS. The interface is React + TypeScript and saves progress locally in the browser; the Spring Boot reference service for the original coursework is archived in a sibling repository.
 
 - 😴 Tracks sleep, hydration, energy, nutrition and activities
 - 📊 Wellness dashboards and campus events
@@ -293,18 +300,34 @@ A publicly deployed full-stack platform: **React → Spring Boot REST → Hibern
 </details>
 
 <details>
-<summary><b>🎨 The Tribal Handicrafts Hub</b> · <code>HTML</code> <code>CSS</code> <code>JavaScript</code></summary>
+<summary><b>🎨 The Tribal Handicrafts Hub</b> · <code>HTML</code> <code>CSS</code> <code>JavaScript</code> <code>Node.js</code> <code>SQLite</code></summary>
 <br>
 
-A web platform showcasing tribal handicrafts.
+A progressive-web-app marketplace for tribal artisans: browse products, read artisan profiles, and submit listings through a small Express API backed by SQLite.
 
 </details>
+
+### 🛩️ THE HANGAR
+
+The rest of the fleet, one line each:
+
+| 📦 Repository | What it does | Stack |
+|---|---|---|
+| [GHOSTLIGHT_STUDIO](https://github.com/Monish03905/GHOSTLIGHT_STUDIO) | Autonomous faceless YouTube studio — writes, narrates, scores, renders and schedules films | Python · FastAPI · FFmpeg |
+| [jarvis-voice-assistant](https://github.com/Monish03905/jarvis-voice-assistant) | Voice-first Windows assistant with an owner voiceprint, local LLM and React HUD | Python · React · Ollama |
+| [Task-Wispr-Flow](https://github.com/Monish03905/Task-Wispr-Flow) | VoxFlow Studio: stream-of-consciousness speech turned into PRDs, tickets and architecture maps | React · Web Audio |
+| [workshop-hub](https://github.com/Monish03905/workshop-hub) | Workshop registry and enrollment platform | React · Supabase |
+| [FEDF-Project](https://github.com/Monish03905/FEDF-Project) | Tribal Handicrafts Hub — artisan marketplace PWA | Node · SQLite |
+| [Webcam-Fruit-Ninja-project](https://github.com/Monish03905/Webcam-Fruit-Ninja-project) | Touchless Fruit Ninja sliced with your fingertip | OpenCV · MediaPipe |
+| [air-draw-canvas](https://github.com/Monish03905/air-draw-canvas) | Draw in mid-air; fist pauses, open palm clears | OpenCV · MediaPipe |
+| [Hand-Tracking-AR-UI](https://github.com/Monish03905/Hand-Tracking-AR-UI) | Sci-fi HUD rendered onto your hand | OpenCV · MediaPipe |
+| [Virtual-Air-Drum-Piano](https://github.com/Monish03905/Virtual-Air-Drum-Piano) | Air drums and piano with per-finger taps | MediaPipe · pygame |
 
 ### 📌 Pinned repos
 
 <p align="center">
   <a href="https://github.com/Monish03905/switchyard-llm-gateway"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Monish03905&repo=switchyard-llm-gateway&theme=radical&hide_border=true" /></a>
-  <a href="https://github.com/Monish03905/DeVision"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Monish03905&repo=DeVision&theme=radical&hide_border=true" /></a>
+  <a href="https://github.com/Monish03905/DEVISION-A.I.-SOFTWARE-"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Monish03905&repo=DEVISION-A.I.-SOFTWARE-&theme=radical&hide_border=true" /></a>
 </p>
 <p align="center">
   <a href="https://github.com/Monish03905/OpsGuard"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Monish03905&repo=OpsGuard&theme=radical&hide_border=true" /></a>
@@ -326,7 +349,7 @@ A web platform showcasing tribal handicrafts.
 | 🧩 **Foundations** | `Data Structures & Algorithms` `OOP` `System Design` `API Integration` `Software Testing` |
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,py,cpp,c,js,ts,react,nodejs,spring,fastapi,postgres,mysql,supabase,aws,gcp,git,githubactions,vite,rust&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=java,py,cpp,c,js,ts,react,nodejs,spring,fastapi,postgres,mysql,supabase,aws,gcp,git,githubactions,vite&theme=dark" />
 </p>
 
 ---
@@ -358,7 +381,7 @@ timeline
 | 🧬 | **Oracle Agentic AI Certified Foundations Associate** |
 | 🛠️ | **Oracle Fusion AI Agent Studio Certified Foundations Associate** |
 | ⚙️ | **RPA Essentials** (Automation Anywhere) |
-| ⭐ | **4-Star programmer** on CodeChef |
+| ⭐ | **5-Star programmer** on CodeChef (highest rating 2,134) |
 | 🏛️ | **Ex-President, VEDA Student Body** (2025-26) |
 | 🎖️ | **Dean's Recognition** for event management and coordination |
 
@@ -370,7 +393,7 @@ timeline
 
 ## 🧩 ARENA
 
-Competing on **LeetCode · CodeChef · HackerRank · HackerEarth · Codeforces**, mostly data structures and dynamic programming.
+Competing on **LeetCode · CodeChef · HackerRank · HackerEarth · Codeforces**, mostly data structures and dynamic programming. Currently **5★ on CodeChef** (highest rating 2,134).
 
 <p align="center">
   <a href="https://leetcode.com/u/KL2400080018/"><img src="https://leetcard.jacoblin.cool/KL2400080018?theme=dark&font=Karla&ext=heatmap" /></a>
